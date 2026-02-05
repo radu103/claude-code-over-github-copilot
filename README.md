@@ -79,7 +79,11 @@ The proxy exposes these models to Claude Code:
 | Claude Code Model | Maps to GitHub Copilot           |
 |-------------------|----------------------------------|
 | `claude-sonnet-4` | `github_copilot/claude-sonnet-4` |
-| `gpt-4`         | `github_copilot/gpt-4`         |
+| `gpt-5-mini`     | `github_copilot/gpt-5-mini`    |
+| `gpt-4.1`        | `github_copilot/gpt-4.1`       |
+| `gpt-4o`         | `github_copilot/gpt-4o`        |
+| `grok-fast-1`    | `github_copilot/grok-fast-1`   |
+| `gpt-4`          | `github_copilot/gpt-4`         |
 
 ## Additional Commands
 
