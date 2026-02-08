@@ -50,17 +50,7 @@ endif
 # Start LiteLLM proxy
 start:
 	@echo "Starting LiteLLM proxy..."
-ifeq ($(OS),Windows_NT)
-	@if exist venv\\Scripts\\litellm.exe ( \
-		venv\\Scripts\\litellm.exe --config copilot-config.yaml --port 4444 \
-	) else if exist venv\\Scripts\\litellm ( \
-		venv\\Scripts\\litellm --config copilot-config.yaml --port 4444 \
-	) else ( \
-		venv\\Scripts\\python.exe -m litellm --config copilot-config.yaml --port 4444 \
-	)
-else
-	@source venv/bin/activate && litellm --config copilot-config.yaml --port 4444
-endif
+	@python3 scripts/start.py || python scripts/start.py
 
 # Stop running processes
 stop:
